@@ -210,11 +210,7 @@
 }
 
 /* stylelint-disable */
-.section {
-    max-width: 1920px;
-    margin: 0 auto;
-    background-color: var(--ui-block-bg);  
-}
+
 .title {
     margin: 10px 0 40px;
 }
@@ -236,7 +232,7 @@
        &::after {
           position: absolute;
           top: 125px;
-          left: 30px;   
+          left: 25px;   
           content: "";
           width: 30px;
           height: 3px;
@@ -252,11 +248,12 @@
         .plan__list-item {
             color: var(--ui-block-bg);
         }
-            
+           
         .plan__icon-wrapper {
             background-color: var(--ui-brand-color);
         
            &::after {
+               top: 145px;
                 background-color: var(--ui-block-bg);  
            }
         }
@@ -271,7 +268,7 @@
     
     &:nth-child(1) svg {
         position: absolute;
-        top: 0;
+        top: 10px;
         left: 390px;
         width: 65px;
         height: 65px;
@@ -280,23 +277,27 @@
     
     &:nth-child(2) svg {
         position: absolute;
-        top: 20px;
-        left: -380px;
-        width: 75px;
-        height: 50px;
+        top: 30px;
+        left: -395px;
+        width: 105px;
+        height: 80px;
     }
     
     &:nth-child(3) svg {
         position: absolute;
-        top: 0;
-        left: 0;
-        width: 75px;
-        height: 50px;
+        top: 15px;
+        left: calc(50% - 52px);
+        width: 105px;
+        height: 75px;
+        text-align: center;
     }
     
     &__price-count {
-        margin-top: 40px;
-       font-size: 80px; 
+        margin-top: 70px;
+       font-size: var(--ui-hero-title-size);
+        &:nth-child(1) {
+           margin-top: 50px; 
+        }
     }
     &__price-text {
         color: #c2c2c2;
@@ -307,6 +308,7 @@
   fill: var(--ui-brand-color);
 }
 
+ 
 #computer path {
    stroke: var(--ui-brand-color); 
 }
